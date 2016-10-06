@@ -1,4 +1,4 @@
-FROM python:3.5
+FROM python:2.7
 MAINTAINER Vanessa Sochat <vsochat@stanford.edu>
 
 # Install Singularity
@@ -10,4 +10,7 @@ RUN ./autogen.sh
 RUN ./configure --prefix=/usr/local
 RUN make
 RUN make install
-CMD /bin/bash
+RUN mkdir /code
+ADD . /code
+WORKDIR /code
+CMD /bin/bash /code/build.sh
