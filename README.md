@@ -11,7 +11,7 @@ Here are basic instructions for building and running the container.
       docker build -t vanessa/singularity-ci .
       docker run -it --privileged vanessa/singularity-ci /bin/bash
 
-Note that "privileded" is needed to correctly be able to build images. The travis user can be logged into via:
+Note that "privileged" is needed to correctly be able to build images. The travis user can be logged into via:
 
       su - travis
 
