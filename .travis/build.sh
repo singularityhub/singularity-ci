@@ -11,7 +11,7 @@ if [ -f "$def" ]; then
     # The name of the image is the definition file minus extension
     imagefile=`echo "${def%%.*}"`
     echo "Creating $imagefile.simg using $def..."
-    singularity build $imagefile.simg $def
+    sudo singularity build $imagefile.simg $def
     singularity run $imagefile.simg
 else
     echo "Singularity file must be in present working directory."
