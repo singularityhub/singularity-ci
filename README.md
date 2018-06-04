@@ -1,5 +1,7 @@
 # Singularity-CI
 
+![sregistry-travis.png](sregistry-travis.png)
+
 [![Build Status](https://travis-ci.org/singularityhub/singularity-ci.svg?branch=master)](https://travis-ci.org/singularityhub/singularity-ci)
 
 This is a simple example of how you can use Continuous Integration (Travis) to build your images! The cool part is that you have complete power to configure the build, and then to push to your storage endpoint of choice.
