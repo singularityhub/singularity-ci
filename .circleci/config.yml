@@ -26,23 +26,32 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install sregistry[all]
-            echo $PWD
+            sudo chmod u+x *.sh
+            /bin/bash ~/repo/setup.sh
 
       - save_cache:
           paths:
             - ./venv
           key: v1-dependencies
         
-      # run tests!
-      # this example uses Django's built-in test-runner
-      # other common Python testing frameworks include pytest and nose
-      # https://pytest.org
-      # https://nose.readthedocs.io
+      # build the container!
+      # You can add any other sregistry push commands here, and specify a client
+      # (and make sure your define the encrypted environment credentials in circle ci
+      # to push to your storage locations of choice
+
+      # Examples with upload to storage clients defined by sregistry
+      # https://singularityhub.github.io/sregistry-cli/clients
+      # Environment variables must be defined in CI encrypted secrets/settings
+      # https://circleci.com/docs/2.0/env-vars/
+      #- /bin/bash build.sh --uri collection/container --cli google-storage Singularity
+      #- /bin/bash build.sh --uri collection/container --cli google-drive Singularity
+      #- /bin/bash build.sh --uri collection/container --cli globus Singularity
+      #- /bin/bash build.sh --uri collection/container --cli registry Singularity
       - run:
           name: build container
           command: |
             . venv/bin/activate
-            which sregistry
+            /bin/bash ~/repo/build.sh Singularity
 
       - store_artifacts:
           path: test-reports

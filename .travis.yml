@@ -14,12 +14,12 @@ matrix:
     - python: "3.5"
 
 before_install:
-  - sudo chmod u+x .travis/*
-  - /bin/bash .travis/before_install
+  - sudo chmod u+x *.sh
+  - /bin/bash setup.sh
 
 script:
                                # recipe
-  - /bin/bash .travis/build.sh Singularity
+  - /bin/bash build.sh Singularity
 
   # Examples with upload to storage clients defined by sregistry
   # https://singularityhub.github.io/sregistry-cli/clients
