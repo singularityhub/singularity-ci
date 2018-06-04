@@ -18,4 +18,13 @@ before_install:
   - /bin/bash .travis/before_install
 
 script:
-  - /bin/bash .travis/build.sh
+                               # recipe
+  - /bin/bash .travis/build.sh Singularity
+
+  # Examples with upload to storage clients defined by sregistry
+  # https://singularityhub.github.io/sregistry-cli/clients
+  # Environment variables must be defined in CI encrypted secrets/settings
+  #- /bin/bash .travis/build.sh --uri collection/container --cli google-storage Singularity
+  #- /bin/bash .travis/build.sh --uri collection/container --cli google-drive Singularity
+  #- /bin/bash .travis/build.sh --uri collection/container --cli globus Singularity
+  #- /bin/bash .travis/build.sh --uri collection/container --cli registry Singularity
