@@ -60,6 +60,14 @@ Once the image is built, where can you put it? An easy answer is to use the [Sin
  2. Saving the credentials / other environment variables that your client needs (see the client settings page linked in the sregistry docs above) to your [repository settings](https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings) where they will be encrypted and in the environment.
  3. adding a line to your .travis.yml to do an sregistry push action to the endpoint of choice. We have provided some (commented out) examples to get you started. 
 
+## Travis Provided Uploads
+You don't even need to use sregistry to upload a container (or an artifact / result produced from running one via a cron job maybe?) to an endpoint of choice! There are a [crapton](https://docs.travis-ci.com/user/deployment) of places you can deploy to. If you can think of it, it's on this list. Here are a sampling of some that I've tried (and generally like):
+
+ - [Surge.sh](https://docs.travis-ci.com/user/deployment/surge/) gives you a little web address for free to upload content. This means that if your container runs an analysis and generates a web report, you can push it here. Each time you run it, you can push again and update your webby thing. Cool! Here is an [old example](http://containers-ftw.surge.sh/) of how I did this - the table you see was produced by a container and then the generated report uploaded to surge.
+ - [Amazon S3](https://docs.travis-ci.com/user/deployment/s3/) bread and butter of object storage. sregistry doesn't have a client for it (bad dinosaur!) so I'll direct you to Travis to help :)
+ - [Github Pages](https://docs.travis-ci.com/user/deployment/pages/) I want to point you to github pages in the case that your container has documentation that should be pushed when built afresh.
+
+
 ## Advanced
 
 Guess what, this setup is totally changeable by you, it's your build! This means you can do any of the following "advanced" options:
