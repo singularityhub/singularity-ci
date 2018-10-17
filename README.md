@@ -13,7 +13,11 @@ an example with travis-ci, and now will be updated to include more than that.
 For each of the above, you should find complete instructions in the corresponding README.md
 provided in the Github repositories. Build away, friends!
 
+## List of Builder Friends
+
+![img/sregistry-circle.png](img/sregistry-circle.png)
 ![img/sregistry-travis.png](img/sregistry-travis.png)
+
 
 ## Contributing
 
