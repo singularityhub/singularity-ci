@@ -1,4 +1,4 @@
-# Singularity-CI
+# Singularity-CI Builders
 
 This is an entrypoint to show you how you can build Singularity containers 
 on different Continuous Integration Services. This link was originally serving just
