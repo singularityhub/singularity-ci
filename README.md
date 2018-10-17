@@ -8,7 +8,7 @@ an example with travis-ci, and now will be updated to include more than that.
 | Service | Status | Github |
 |---------|--------|--------|
 |[travis-ci](https://travis-ci.org) | [![Build Status](https://travis-ci.org/singularityhub/travis-ci.svg?branch=master)](https://travis-ci.org/singularityhub/travis-ci) | [singularityhub/travis-ci](https://www.github.com/singularityhub/travis-ci) |
-
+|[CircleCI](https://www.circleci.com)| [singularityhub/circle-ci]([![CircleCI](https://circleci.com/gh/singularityhub/circle-ci.svg?style=svg)](https://circleci.com/gh/singularityhub/circle-ci)) |
 
 For each of the above, you should find complete instructions in the corresponding README.md
 provided in the Github repositories. Build away, friends!
