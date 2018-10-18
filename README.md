@@ -6,7 +6,7 @@ an example with travis-ci, and now will be updated to include more than that.
 
 ## Working
 
-| Service | Status | Github |  |
+| Service &nbsp; &nbsp; &nbsp; &nbsp; | Status &nbsp; &nbsp; &nbsp; &nbsp; | Github |  |
 |---------|--------|--------|--|
 |[TravisCI](https://travis-ci.org) | [![Build Status](https://travis-ci.org/singularityhub/travis-ci.svg?branch=master)](https://travis-ci.org/singularityhub/travis-ci) | [singularityhub/travis-ci](https://www.github.com/singularityhub/travis-ci) | ![img/sregistry-travis.png](img/sregistry-travis.png) |
 |[CircleCI](https://www.circleci.com) |  [![CircleCI](https://circleci.com/gh/singularityhub/circle-ci.svg?style=svg)](https://circleci.com/gh/singularityhub/circle-ci) | [singularityhub/circle-ci](https://www.github.com/singularityhub/circle-ci) | ![img/sregistry-circle.png](img/sregistry-circle.png) |
