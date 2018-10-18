@@ -4,8 +4,6 @@ This is an entrypoint to show you how you can build Singularity containers
 on different Continuous Integration Services. This link was originally serving just
 an example with travis-ci, and now will be updated to include more than that.
 
-## Working
-
 | Service  | Status | Github |  |
 |---------|--------|--------|--|
 |[TravisCI](https://travis-ci.org) | [![Build Status](https://travis-ci.org/singularityhub/travis-ci.svg?branch=master)](https://travis-ci.org/singularityhub/travis-ci) | [singularityhub/travis-ci](https://www.github.com/singularityhub/travis-ci) | ![img/sregistry-travis-small.png](img/sregistry-travis-small.png) |
