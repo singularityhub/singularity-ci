@@ -4,7 +4,10 @@ This is an entrypoint to show you how you can build Singularity containers
 on different Continuous Integration Services. The templates provided are served
 by Gitlab or Github, depending on where the CI services are commonly used.
 
-## General Templates
+
+--------------------------------------------------------------------------------
+
+# General Templates
 
 The following are general builders that you can customize to build on Travis, CircleCI, or GitLab, and then
 deploy to a storage (or artifact storage) of choice.
@@ -15,7 +18,10 @@ deploy to a storage (or artifact storage) of choice.
 |[TravisCI](https://travis-ci.org) | [![Build Status](https://travis-ci.org/singularityhub/travis-ci.svg?branch=master)](https://travis-ci.org/singularityhub/travis-ci) | [singularityhub/travis-ci](https://www.github.com/singularityhub/travis-ci) | ![img/sregistry-travis-small.png](img/sregistry-travis-small.png) |
 |[CircleCI](https://www.circleci.com) |  [![CircleCI](https://circleci.com/gh/singularityhub/circle-ci.svg?style=svg)](https://circleci.com/gh/singularityhub/circle-ci) | [singularityhub/circle-ci](https://www.github.com/singularityhub/circle-ci) | ![img/sregistry-circle-small.png](img/sregistry-circle-small.png) |
 
-## Specific Templates
+
+--------------------------------------------------------------------------------
+
+# Specific Templates
 
 The following templates are more catered to specific deployments, and provided as requested from users like you! If you would like a custom
 template example, please [open an issue](https://www.github.com/singularityhub/singularity-ci/).
@@ -24,7 +30,11 @@ template example, please [open an issue](https://www.github.com/singularityhub/s
 |--------- |-----------------------------|----------|
 | CircleCI | Singularity Registry Server | [singularityhub/circle-ci-sregistry](https://github.com/singularityhub/circle-ci-sregistry) |
 
-## Static Registry Examples
+
+--------------------------------------------------------------------------------
+
+
+# Static Registry Examples
 
 For examples that deploy to [Singularity Static Registry](https://github.com/singularityhub/registry) types, see the [documentation here](https://github.com/singularityhub/registry/wiki). These examples include building with CircleCI and Google Build, and deploying to
 various cloud storages. Again, it's very "choose your own adventure" like, so if you have a custom set of needs, please
