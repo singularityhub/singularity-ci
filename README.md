@@ -9,15 +9,14 @@ by Gitlab or Github, depending on where the CI services are commonly used.
 
 # General Templates
 
-The following are general builders that you can customize to build on Travis, CircleCI, or GitLab, and then
-deploy to a storage (or artifact storage) of choice.
+The following are general builders that you can customize to build on Travis, CircleCI, GitHub, or GitLab.
 
 | Service  | Status | Template |  |
 |---------|--------|--------|--|
 |[GitLab](https://gitlab.com) | | [singularityhub/gitlab-ci](https://www.gitlab.com/singularityhub/gitlab-ci) | ![img/sregistry-gitlab-small.png](img/sregistry-gitlab-small.png) |
 |[TravisCI](https://travis-ci.org) | [![Build Status](https://travis-ci.org/singularityhub/travis-ci.svg?branch=master)](https://travis-ci.org/singularityhub/travis-ci) | [singularityhub/travis-ci](https://www.github.com/singularityhub/travis-ci) | ![img/sregistry-travis-small.png](img/sregistry-travis-small.png) |
 |[CircleCI](https://www.circleci.com) |  [![CircleCI](https://circleci.com/gh/singularityhub/circle-ci.svg?style=svg)](https://circleci.com/gh/singularityhub/circle-ci) | [singularityhub/circle-ci](https://www.github.com/singularityhub/circle-ci) | ![img/sregistry-circle-small.png](img/sregistry-circle-small.png) |
-
+|[GitHub](https://github.com) | | [singularityhub/github-ci](https://www.github.com/singularityhub/github-ci) | ![img/sregistry-github-small.png](img/sregistry-github-small.png) |
 
 --------------------------------------------------------------------------------
 
